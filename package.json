@@ -1,0 +1,19 @@
+{
+  "name": "crm-app-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --testEnvironment=node --runInBand --detectOpenHandles --coverage ./tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jest": "^29.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb-memory-server": "^8.10.0",
+    "mongoose": "^6.7.3"
+  }
+}
