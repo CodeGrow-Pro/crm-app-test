@@ -20,7 +20,7 @@ const testPayload = {
     ticketsAssigned: []
 }
 
-describe('signup', () => {
+xdescribe('signup', () => {
     it('should pass', async () => {
         // Arrange
         const req = mockRequest();
@@ -64,4 +64,48 @@ describe('signup', () => {
     // Try "Unit test for update pass" : exec()
     // expect.arrayContaining()
     // Promise.reject, Promise.resolve()
+})
+
+xdescribe('signin', () => {
+    xit('should fail due to password mismatch', async () => {
+        // Arrange
+        testPayload.userStatus = 'APPROVED';
+        const userSpy = jest.spyOn(UserModel, 'findOne').mockReturnValue(Promise.resolve(testPayload));
+        const bcryptSpy = jest.spyOn(bcrypt, 'compareSync').mockReturnValue(false);
+        const req = mockRequest();
+        const res = mockResponse();
+        req.body = testPayload;
+
+        // Act
+        await signin(req, res);
+
+        // Assert
+        expect(userSpy).toHaveBeenCalled();
+        expect(bcryptSpy).toHaveBeenCalled();
+        expect(res.status).toHaveBeenCalledWith(401);
+        expect(res.send).toHaveBeenCalledWith({
+            accessToken: null,
+            message: "Invalid Password!"
+        })
+
+    })
+
+    it('should fail due to pending status', async () => {
+        // Arrange
+        const userSpy = jest.spyOn(UserModel, 'findOne').mockReturnValue(Promise.resolve(testPayload));
+        const req = mockRequest();
+        const res = mockResponse();
+        req.body = testPayload;
+
+        // Act
+        await signin(req, res);
+
+        // Assert
+        expect(userSpy).toHaveBeenCalled();
+        expect(res.status).toHaveBeenCalledWith(200);
+        expect(res.send).toHaveBeenCalledWith({
+            message: `Can't allow login as user is in statuts : [${testPayload.userStatus}]`
+        })
+
+    })
 })

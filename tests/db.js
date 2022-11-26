@@ -7,10 +7,7 @@ exports.connect = async () => {
     if(!mongod){
         mongod = await MongoMemoryServer.create();
         const uri = mongod.getUri();
-        const options = {
-            maxPoolSize: 30
-        }
-        mongoose.connect(uri, options);
+        mongoose.connect(uri);
     }
 }
 
@@ -18,15 +15,14 @@ exports.closeDatabase = async () => {
     await mongoose.connection.dropDatabase();
     await mongoose.connection.close();
     if(mongod){
-        mongod.stop();
+        await mongod.stop();
     }
 }
 
 exports.clearDatabase = async () => {
     const collections = mongoose.connection.collections;
-    for(let key in collections){
+    for(const key in collections){
         const collection = collections[key];
-        // wait for cleanup: MongoPoolClosedError: Attempted to check out a connection from closed connection pool
-        await collection.deleteMany();
+        collection.deleteMany();
     }
 }
