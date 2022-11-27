@@ -7,7 +7,7 @@ exports.connect = async () => {
     if(!mongod){
         mongod = await MongoMemoryServer.create();
         const uri = mongod.getUri();
-        mongoose.connect(uri);
+        await mongoose.connect(uri);
     }
 }
 
@@ -23,6 +23,6 @@ exports.clearDatabase = async () => {
     const collections = mongoose.connection.collections;
     for(const key in collections){
         const collection = collections[key];
-        collection.deleteMany();
+        await collection.deleteMany();
     }
 }

@@ -14,9 +14,9 @@ const testPayload = {
     ticketsAssigned: []
 }
 
-// beforeAll(async () => await connect());
-// beforeEach(async () => await clearDatabase());
-// afterAll(async () => await closeDatabase());
+beforeAll(async () => await connect());
+beforeEach(async () => await clearDatabase());
+afterAll(async () => await closeDatabase());
 
 describe('findall', () => {
     it('find without filters', async () => {
