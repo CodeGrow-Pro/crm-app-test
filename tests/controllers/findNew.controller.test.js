@@ -18,7 +18,7 @@ beforeAll(async () => await connect());
 beforeEach(async () => await clearDatabase());
 afterAll(async () => await closeDatabase());
 
-describe('findall', () => {
+xdescribe('findall', () => {
     it('find without filters', async () => {
         // Arrange
         const req = mockRequest();

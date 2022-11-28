@@ -19,8 +19,8 @@ beforeAll(async () => await connect());
 beforeEach(async () => await clearDatabase());
 afterAll(async () => await closeDatabase());
 
-xdescribe('signup', () => {
-    it('success', async () => {
+describe('signup', () => {
+    xit('success', async () => {
         // Arrange
         const req = mockRequest();
         const res = mockResponse();
@@ -47,7 +47,8 @@ xdescribe('signup', () => {
         const req = mockRequest();
         const res = mockResponse();
         req.body = testPayload;
-        const spy = jest.spyOn(UserModel, 'create').mockImplementation(() => { throw new Error('Error occurred'); })
+        //const spy = jest.spyOn(UserModel, 'create').mockImplementation(() => { throw new Error('Error occurred'); })
+        const spy = jest.spyOn(UserModel, 'create').mockImplementation(cb => cb( new Error('Error occurred'),null));
 
         // Act
         await signup(req, res);

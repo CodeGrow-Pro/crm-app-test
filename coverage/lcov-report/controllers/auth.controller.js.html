@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">22.85% </span>
+                <span class="strong">45.71% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/35</span>
+                <span class='fraction'>16/35</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">8.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>1/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">22.85% </span>
+                <span class="strong">45.71% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/35</span>
+                <span class='fraction'>16/35</span>
             </div>
         
             
@@ -164,21 +164,36 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -187,23 +202,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -254,10 +254,10 @@ var bcrypt = require("bcryptjs");
 var jwt = require("jsonwebtoken");
 const config = require("../config/auth.config");
 &nbsp;
-exports.signup = <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
+exports.signup = async (req, res) =&gt; {
     // Default approve signup request for customer
-    var userStatus = <span class="cstat-no" title="statement not covered" >req.body.userStatus;</span>
-<span class="cstat-no" title="statement not covered" >    if (!req.body.userStatus) {</span>
+    var userStatus = req.body.userStatus;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!req.body.userStatus) {
 <span class="cstat-no" title="statement not covered" >        if (!req.body.userType || req.body.userType == userTypes.customer) {</span>
 <span class="cstat-no" title="statement not covered" >            userStatus = constants.userStatus.approved;</span>
         } else {
@@ -266,7 +266,7 @@ exports.signup = <span class="fstat-no" title="function not covered" >as</span>y
     }
 &nbsp;
     // Create user object to save in mongoDB
-    const userObj = <span class="cstat-no" title="statement not covered" >{</span>
+    const userObj = {
         name: req.body.name,
         userId: req.body.userId,
         email: req.body.email,
@@ -277,10 +277,10 @@ exports.signup = <span class="fstat-no" title="function not covered" >as</span>y
                 8),
         userStatus: userStatus
     }
-<span class="cstat-no" title="statement not covered" >    console.log('post bcrypt')</span>
+    console.log('post bcrypt')
     // Call mongodb and save the new user
-<span class="cstat-no" title="statement not covered" >    try {</span>
-        const userCreated = <span class="cstat-no" title="statement not covered" >await User.create(userObj);</span>
+    try {
+        const userCreated = await User.create(userObj);
 <span class="cstat-no" title="statement not covered" >        console.log('post create')</span>
         const postResponse = <span class="cstat-no" title="statement not covered" >{</span>
             name: userCreated.name,
@@ -294,8 +294,8 @@ exports.signup = <span class="fstat-no" title="function not covered" >as</span>y
         // Created success status code: 201
 <span class="cstat-no" title="statement not covered" >        res.status(201).send(postResponse);</span>
     } catch (err) {
-<span class="cstat-no" title="statement not covered" >        console.log("Some error while saving the user in db", err.message);</span>
-<span class="cstat-no" title="statement not covered" >        res.status(500).send({</span>
+        console.log("Some error while saving the user in db", err.message);
+        res.status(500).send({
             message: "Some internal error while inserting the element"
         });
     }
@@ -346,7 +346,7 @@ exports.signin = <span class="fstat-no" title="function not covered" >as</span>y
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-11-26T07:20:34.826Z
+                at 2022-11-27T12:11:34.517Z
             </div>
         <script src="../prettify.js"></script>
         <script>
