@@ -19,7 +19,7 @@ beforeAll(async () => await connect());
 beforeEach(async () => await clearDatabase());
 afterAll(async () => await closeDatabase());
 
-describe('signup', () => {
+xdescribe('signup', () => {
     xit('success', async () => {
         // Arrange
         const req = mockRequest();
