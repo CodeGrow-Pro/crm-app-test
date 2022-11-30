@@ -14,7 +14,7 @@ exports.update = async (req, res) => {
             message: `User record has been updated successfully`
         });
     } catch (err) {
-        console.err("Error while updating the record", err.message);
+        console.error("Error while updating the record", err.message);
         res.status(500).send({
             message: "Some internal error occured"
         })

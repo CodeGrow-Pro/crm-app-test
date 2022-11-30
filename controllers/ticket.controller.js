@@ -2,7 +2,7 @@ const Ticket = require('../models/ticket.model');
 const User = require('../models/user.model');
 const {userTypes, userStatus} = require('../utils/constants')
 const objectConvertor = require('../utils/objectConvertor')
-const sendEmail = require('../utils/NotificationClient');
+const {sendEmail} = require('../utils/NotificationClient');
 
 exports.createTicket = async (req,res) => {
 

@@ -20,6 +20,17 @@ const ticketCreateTestPayload = {
     updatedAt: Date.now()
 }
 
+const userTestPayload = {
+    userType: 'CUSTOMER',
+    password: '1234',
+    name: "Test",
+    userId: "1",
+    email: 'test@relevel.com',
+    userStatus: 'PENDING',
+    ticketsCreated: [],
+    ticketsAssigned: [],
+    save: jest.fn()
+}
 
 xdescribe('ticketController', () => {
     it("should pass", async () => {
@@ -40,9 +51,9 @@ xdescribe('ticketController', () => {
         expect(res.status).toHaveBeenCalledWith(201);
         expect(res.send).toHaveBeenCalledWith(
             expect.objectContaining({
-                assignee: 1,
+                assignee: "1",
                 description: "Test",
-                reporter: 1,
+                reporter: "1",
                 status: "OPEN",
                 ticketPriority: 4,
                 title: "Test",
@@ -50,4 +61,26 @@ xdescribe('ticketController', () => {
         );
     })
 
+    it("should pass", async () => {
+        // Arrange
+        const userSpy = jest.spyOn(User, 'findOne').mockReturnValue(Promise.resolve(userTestPayload));
+        const ticketSpy = jest.spyOn(Ticket, 'create').mockReturnValue(cb => cb(new Error('This is an error'), null));
+        const req = mockRequest();
+        const res = mockResponse();
+        req.body = ticketCreateTestPayload;
+        req.userId = 1;
+
+        // Act
+        await createTicket(req, res);
+
+        // Assert
+        expect(userSpy).toHaveBeenCalled();
+        expect(ticketSpy).toHaveBeenCalled();
+        expect(res.status).toHaveBeenCalledWith(500);
+        expect(res.send).toHaveBeenCalledWith(
+            expect.objectContaining({
+                message: 'Error in creating ticket'
+            })
+        );
+    })
 })

@@ -1,7 +1,7 @@
 const request = require('supertest');
 
 const User = require('../../models/user.model');
-// const app = require("../../server");
+const app = require("../../server");
 var jwt = require("jsonwebtoken");
 const config = require("../../config/auth.config");
 
@@ -26,7 +26,7 @@ afterAll(async () => {
 
 const api_endpoint = "/crm/api/v1/";
 
-xdescribe('Find By Id Endpoints', () => {
+describe('Find By Id Endpoints', () => {
 
     var token = 'Bearer ' + jwt.sign({ id: 1 }, config.secret, {
         expiresIn: 120 // 2 minutes
@@ -50,7 +50,7 @@ xdescribe('Find By Id Endpoints', () => {
     })
 })
 
-xdescribe('Find All Endpoints', () => {
+describe('Find All Endpoints', () => {
 
     var token = 'Bearer ' +  jwt.sign({ id: 1 }, config.secret, {
         expiresIn: 120 // 2 minutes
@@ -75,7 +75,7 @@ xdescribe('Find All Endpoints', () => {
     })
 })
 
-xdescribe('PUT Update Endpoints', () => {
+describe('PUT Update Endpoints', () => {
 
     var token = 'Bearer ' +  jwt.sign({ id: 1 }, config.secret, {
         expiresIn: 120 // 2 minutes

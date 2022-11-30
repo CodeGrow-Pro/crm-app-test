@@ -2,7 +2,9 @@ const Client = require('node-rest-client').Client;
 
 const client = new Client();
 
-module.exports = (ticketId, subject, content, recipients, requestor) => {
+exports.client =client;
+
+exports.sendEmail = (ticketId, subject, content, recipients, requestor) => {
     const requestBody = {
         subject,
         content,

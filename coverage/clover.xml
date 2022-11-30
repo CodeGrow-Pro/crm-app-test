@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1669645780269" clover="3.2.0">
-  <project timestamp="1669645780269" name="All files">
-    <metrics statements="298" coveredstatements="136" conditionals="73" coveredconditionals="10" methods="36" coveredmethods="10" elements="407" coveredelements="156" complexity="0" loc="298" ncloc="298" packages="7" files="22" classes="22"/>
+<coverage generated="1669803033757" clover="3.2.0">
+  <project timestamp="1669803033757" name="All files">
+    <metrics statements="302" coveredstatements="171" conditionals="73" coveredconditionals="24" methods="36" coveredmethods="18" elements="411" coveredelements="213" complexity="0" loc="302" ncloc="302" packages="7" files="22" classes="22"/>
     <package name="crm-app-test">
       <metrics statements="17" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
       <file name="server.js" path="C:\Users\satis\Documents\git\crm-app-test\server.js">
         <metrics statements="17" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
       </file>
     </package>
     <package name="crm-app-test.config">
@@ -33,26 +33,26 @@
       </file>
       <file name="db.config.js" path="C:\Users\satis\Documents\git\crm-app-test\config\db.config.js">
         <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
       </file>
       <file name="server.config.js" path="C:\Users\satis\Documents\git\crm-app-test\config\server.config.js">
         <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="1" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
       </file>
     </package>
     <package name="crm-app-test.controllers">
-      <metrics statements="142" coveredstatements="44" conditionals="45" coveredconditionals="7" methods="9" coveredmethods="2"/>
+      <metrics statements="145" coveredstatements="64" conditionals="45" coveredconditionals="14" methods="9" coveredmethods="5"/>
       <file name="auth.controller.js" path="C:\Users\satis\Documents\git\crm-app-test\controllers\auth.controller.js">
         <metrics statements="35" coveredstatements="27" conditionals="12" coveredconditionals="7" methods="2" coveredmethods="2"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="12" count="1" type="cond" truecount="3" falsecount="1"/>
@@ -67,7 +67,7 @@
         <line num="46" count="1" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
         <line num="49" count="0" type="stmt"/>
-        <line num="55" count="3" type="stmt"/>
+        <line num="55" count="4" type="stmt"/>
         <line num="56" count="1" type="stmt"/>
         <line num="57" count="1" type="stmt"/>
         <line num="58" count="1" type="cond" truecount="1" falsecount="1"/>
@@ -83,27 +83,27 @@
         <line num="85" count="1" type="stmt"/>
       </file>
       <file name="findAll.controller.js" path="C:\Users\satis\Documents\git\crm-app-test\controllers\findAll.controller.js">
-        <metrics statements="34" coveredstatements="3" conditionals="12" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+        <metrics statements="34" coveredstatements="14" conditionals="12" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="22" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="22" count="1" type="cond" truecount="3" falsecount="1"/>
         <line num="23" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
-        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
+        <line num="34" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
         <line num="41" count="0" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
         <line num="46" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -115,29 +115,32 @@
         <line num="61" count="0" type="stmt"/>
         <line num="64" count="0" type="stmt"/>
         <line num="65" count="0" type="stmt"/>
-        <line num="71" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="72" count="0" type="stmt"/>
+        <line num="71" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="72" count="1" type="stmt"/>
         <line num="74" count="0" type="stmt"/>
       </file>
       <file name="findById.controller.js" path="C:\Users\satis\Documents\git\crm-app-test\controllers\findById.controller.js">
-        <metrics statements="8" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
+        <metrics statements="11" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
       </file>
       <file name="ticket.controller.js" path="C:\Users\satis\Documents\git\crm-app-test\controllers\ticket.controller.js">
         <metrics statements="57" coveredstatements="9" conditionals="19" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
@@ -158,7 +161,7 @@
         <line num="59" count="0" type="stmt"/>
         <line num="67" count="0" type="stmt"/>
         <line num="70" count="0" type="stmt"/>
-        <line num="76" count="2" type="stmt"/>
+        <line num="76" count="3" type="stmt"/>
         <line num="78" count="0" type="stmt"/>
         <line num="79" count="0" type="stmt"/>
         <line num="81" count="0" type="stmt"/>
@@ -173,12 +176,12 @@
         <line num="101" count="0" type="stmt"/>
         <line num="103" count="0" type="stmt"/>
         <line num="108" count="0" type="stmt"/>
-        <line num="111" count="2" type="stmt"/>
+        <line num="111" count="3" type="stmt"/>
         <line num="112" count="0" type="stmt"/>
         <line num="113" count="0" type="stmt"/>
         <line num="117" count="0" type="stmt"/>
         <line num="119" count="0" type="stmt"/>
-        <line num="125" count="2" type="stmt"/>
+        <line num="125" count="3" type="stmt"/>
         <line num="126" count="0" type="stmt"/>
         <line num="127" count="0" type="stmt"/>
         <line num="129" count="0" type="stmt"/>
@@ -191,13 +194,13 @@
         <line num="160" count="0" type="stmt"/>
       </file>
       <file name="update.controller.js" path="C:\Users\satis\Documents\git\crm-app-test\controllers\update.controller.js">
-        <metrics statements="8" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
       </file>
@@ -206,55 +209,55 @@
       <metrics statements="10" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
       <file name="ticket.model.js" path="C:\Users\satis\Documents\git\crm-app-test\models\ticket.model.js">
         <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
-        <line num="39" count="2" type="stmt"/>
+        <line num="39" count="3" type="stmt"/>
       </file>
       <file name="user.model.js" path="C:\Users\satis\Documents\git\crm-app-test\models\user.model.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
-        <line num="58" count="7" type="stmt"/>
+        <line num="1" count="9" type="stmt"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="58" count="9" type="stmt"/>
       </file>
     </package>
     <package name="crm-app-test.routes">
       <metrics statements="27" coveredstatements="27" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="api.js" path="C:\Users\satis\Documents\git\crm-app-test\routes\api.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
       </file>
       <file name="auth.routes.js" path="C:\Users\satis\Documents\git\crm-app-test\routes\auth.routes.js">
         <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
       </file>
     </package>
     <package name="crm-app-test.tests">
@@ -269,24 +272,24 @@
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="14" count="7" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="18" count="0" type="stmt"/>
         <line num="22" count="7" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
       </file>
       <file name="interceptor.js" path="C:\Users\satis\Documents\git\crm-app-test\tests\interceptor.js">
         <metrics statements="11" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="1" count="5" type="stmt"/>
+        <line num="1" count="7" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
-        <line num="8" count="5" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
@@ -295,47 +298,48 @@
       </file>
     </package>
     <package name="crm-app-test.utils">
-      <metrics statements="69" coveredstatements="22" conditionals="20" coveredconditionals="0" methods="13" coveredmethods="0"/>
+      <metrics statements="70" coveredstatements="37" conditionals="20" coveredconditionals="7" methods="13" coveredmethods="5"/>
       <file name="NotificationClient.js" path="C:\Users\satis\Documents\git\crm-app-test\utils\NotificationClient.js">
-        <metrics statements="10" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
+        <metrics statements="11" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
       </file>
       <file name="constants.js" path="C:\Users\satis\Documents\git\crm-app-test\utils\constants.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="4" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
       </file>
       <file name="isAdmin.js" path="C:\Users\satis\Documents\git\crm-app-test\utils\isAdmin.js">
-        <metrics statements="8" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="8" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="9" count="0" type="stmt"/>
+        <metrics statements="8" coveredstatements="6" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="8" count="3" type="cond" truecount="3" falsecount="1"/>
+        <line num="9" count="3" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
       </file>
       <file name="objectConvertor.js" path="C:\Users\satis\Documents\git\crm-app-test\utils\objectConvertor.js">
-        <metrics statements="12" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
-        <line num="1" count="4" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
+        <metrics statements="12" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="31" count="4" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
@@ -343,8 +347,8 @@
       </file>
       <file name="validateStatus.js" path="C:\Users\satis\Documents\git\crm-app-test\utils\validateStatus.js">
         <metrics statements="6" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="7" count="0" type="stmt"/>
@@ -352,8 +356,8 @@
       </file>
       <file name="validateTicketStatus.js" path="C:\Users\satis\Documents\git\crm-app-test\utils\validateTicketStatus.js">
         <metrics statements="18" coveredstatements="5" conditionals="8" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
         <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="11" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
@@ -361,30 +365,30 @@
         <line num="18" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
         <line num="34" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="35" count="0" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
         <line num="41" count="0" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-        <line num="49" count="1" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
       </file>
       <file name="validateToken.js" path="C:\Users\satis\Documents\git\crm-app-test\utils\validateToken.js">
-        <metrics statements="12" coveredstatements="3" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="7" count="0" type="cond" truecount="0" falsecount="2"/>
+        <metrics statements="12" coveredstatements="10" conditionals="6" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="3" type="cond" truecount="1" falsecount="1"/>
         <line num="8" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="cond" truecount="1" falsecount="1"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
       </file>
     </package>
   </project>
