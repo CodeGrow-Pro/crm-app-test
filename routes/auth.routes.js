@@ -17,12 +17,14 @@ module.exports = function(router){
 
     router.post("/crm/api/v1/auth/signin", authController.signin);
 
+    // Users
     router.get("/crm/api/v1/users", validator.verifyToken, isAdmin, findAllController.findAll);
 
     router.get("/crm/api/v1/users/:userId", validator.verifyToken, isAdmin, findByIdController.findById);
 
     router.put("/crm/api/v1/users/:userId", validator.verifyToken, isAdmin, updateController.update);
 
+    // Tickets
     router.post("/crm/api/v1/tickets", validator.verifyToken, validateTicket.validateTicketRequestBody, ticketController.createTicket);
 
     router.get("/crm/api/v1/tickets", validator.verifyToken, ticketController.getAllTickets);

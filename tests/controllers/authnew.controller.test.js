@@ -19,7 +19,7 @@ beforeAll(async () => await connect());
 beforeEach(async () => await clearDatabase());
 afterAll(async () => await closeDatabase());
 
-xdescribe('signup', () => {
+describe('signup', () => {
     xit('success', async () => {
         // Arrange
         const req = mockRequest();
@@ -64,7 +64,7 @@ xdescribe('signup', () => {
     })
 })
 
-xdescribe('signin', () => {
+describe('signin', () => {
     it('successful login', async () => {
         // Arrange
         const req = mockRequest();
@@ -85,7 +85,7 @@ xdescribe('signin', () => {
         expect(bcryptSpy).toHaveBeenCalled();
         expect(res.send).toHaveBeenCalledWith(
             expect.objectContaining({
-                userTypes: 'CUSTOMER',
+                userType: 'CUSTOMER',
                 name: "Test",
                 userId: "1",
                 email: 'test@relevel.com',

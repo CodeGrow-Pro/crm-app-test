@@ -13,7 +13,7 @@ const testPayload = {
     ticketsAssigned: []
 }
 
-xdescribe('findById', () => {
+describe('findById', () => {
     it('error case', async () => {
         // Arrange
         const req = mockRequest();

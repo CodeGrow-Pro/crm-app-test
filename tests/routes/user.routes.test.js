@@ -13,11 +13,11 @@ beforeAll(async () => {
         userId: 1, // It should be atleat 16, else will throw error
         email: "Kankvish@gmail.com",  // If we don't pass this, it will throw the error
         userType: "ADMIN",
-        password :"Welcome1",
+        password: "Welcome1",
         userStatus: "APPROVED"
 
     });
-    
+
 })
 afterAll(async () => {
     await db.closeDatabase();
@@ -30,21 +30,22 @@ describe('Find By Id Endpoints', () => {
 
     var token = 'Bearer ' + jwt.sign({ id: 1 }, config.secret, {
         expiresIn: 120 // 2 minutes
-      });
+    });
     it('should find by id', async () => {
         const res = await request(app)
             .get(api_endpoint + 'users/1')
             .set("authorization", token)
-            .field("userId",1)
+            .field("userId", 1)
         expect(res.statusCode).toEqual(200);
         expect(res.body).toEqual(
             expect.arrayContaining([
                 expect.objectContaining({
                     "email": "kankvish@gmail.com",
-                    "name": "Vishwa", 
-                    "userId": "1", 
-                    "userStatus": "APPROVED", 
-                    "userType": "ADMIN"})
+                    "name": "Vishwa",
+                    "userId": "1",
+                    "userStatus": "APPROVED",
+                    "userType": "ADMIN"
+                })
             ])
         );
     })
@@ -52,24 +53,25 @@ describe('Find By Id Endpoints', () => {
 
 describe('Find All Endpoints', () => {
 
-    var token = 'Bearer ' +  jwt.sign({ id: 1 }, config.secret, {
+    var token = 'Bearer ' + jwt.sign({ id: 1 }, config.secret, {
         expiresIn: 120 // 2 minutes
-      });
+    });
     it('should Find All', async () => {
         const res = await request(app)
             .get(api_endpoint + 'users')
             .set("authorization", token)
-            .query({userType:"ADMIN"})
-            .field("userId",1)
+            .query({ userType: "ADMIN" })
+            .field("userId", 1)
         expect(res.statusCode).toEqual(200);
         expect(res.body).toEqual(
             expect.arrayContaining([
                 expect.objectContaining({
                     "email": "kankvish@gmail.com",
-                    "name": "Vishwa", 
-                    "userId": "1", 
-                    "userStatus": "APPROVED", 
-                    "userType": "ADMIN"})
+                    "name": "Vishwa",
+                    "userId": "1",
+                    "userStatus": "APPROVED",
+                    "userType": "ADMIN"
+                })
             ])
         );
     })
@@ -77,15 +79,15 @@ describe('Find All Endpoints', () => {
 
 describe('PUT Update Endpoints', () => {
 
-    var token = 'Bearer ' +  jwt.sign({ id: 1 }, config.secret, {
+    var token = 'Bearer ' + jwt.sign({ id: 1 }, config.secret, {
         expiresIn: 120 // 2 minutes
-      });
+    });
     it('should Update', async () => {
         const res = await request(app)
             .put(api_endpoint + 'users/1')
             .set("authorization", token)
-            .field("userType","ADMIN")
-            .field("userId",1)
+            .field("userType", "ADMIN")
+            .field("userId", 1)
         console.log(res.error)
         expect(res.statusCode).toEqual(200);
         expect(res.body).toEqual({

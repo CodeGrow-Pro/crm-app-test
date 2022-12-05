@@ -20,7 +20,7 @@ const testPayload = {
     ticketsAssigned: []
 }
 
-xdescribe('signup', () => {
+describe('signup', () => {
     it('should pass', async () => {
         // Arrange
         const req = mockRequest();
@@ -66,8 +66,8 @@ xdescribe('signup', () => {
     // Promise.reject, Promise.resolve()
 })
 
-xdescribe('signin', () => {
-    xit('should fail due to password mismatch', async () => {
+describe('signin', () => {
+    it('should fail due to password mismatch', async () => {
         // Arrange
         testPayload.userStatus = 'APPROVED';
         const userSpy = jest.spyOn(UserModel, 'findOne').mockReturnValue(Promise.resolve(testPayload));
@@ -96,6 +96,7 @@ xdescribe('signin', () => {
         const req = mockRequest();
         const res = mockResponse();
         req.body = testPayload;
+        testPayload.userStatus = 'PENDING';
 
         // Act
         await signin(req, res);

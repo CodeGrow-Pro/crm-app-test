@@ -130,8 +130,8 @@ exports.updateTicket = async(req, res) => {
 
         if(
             user.userType == "ADMIN" ||
-            ticket.assignee == req.userId ||
-            ticket.reporter == req.userId
+            ticket.assignee == user.userId ||
+            ticket.reporter == user.userId
         ){
             // Update ticket
             ticket.status = req.body.status != undefined ? req.body.status : ticket.status;
@@ -141,11 +141,13 @@ exports.updateTicket = async(req, res) => {
             /**
              * Send email on success
              */
+             const customer = await User.findOne({userId: ticket.reporter}).exec();
+             const engineer = await User.findOne({userId: ticket.assignee}).exec();
              sendEmail(
                 ticket._id, 
                 `Ticket with id:${ticket._id} created`,
                 ticket.description,
-                [ticket.reporter, engineer.assignee].toString(),
+                [customer.email, engineer.email].toString(),
                 'CRM app'
             )
 

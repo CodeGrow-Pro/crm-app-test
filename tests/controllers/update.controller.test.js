@@ -13,7 +13,7 @@ const testPayload = {
     ticketsAssigned: []
 }
 
-xdescribe('update', () => {
+describe('update', () => {
     it('error case', async () => {
         // Arrange
         const req = mockRequest();

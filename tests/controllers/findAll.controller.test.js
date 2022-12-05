@@ -15,7 +15,7 @@ const userTestPayload = [{
     userStatus: 'APPROVED'
 }]
 
-xdescribe("findAll", () => {
+describe("findAll", () => {
     it('should pass', async () => {
         // Arrange
         // Use mockimplemenation
@@ -39,7 +39,7 @@ xdescribe("findAll", () => {
                     name: 'Test',
                     userId: '123',
                     email: 'test@relevel.com',
-                    userTypes: 'CUSTOMER',
+                    userType: 'CUSTOMER',
                     userStatus: 'APPROVED'
                 })
             ])
